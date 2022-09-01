@@ -1,0 +1,108 @@
+html {  
+  font-family: 'helvetica neue';
+}
+
+body{
+  background-image: url("/images/notesBG.png");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.userName{
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+h1, h3 {
+  color: #163f58;
+  margin: 2px;
+  padding: 20px;
+}
+h1{
+  font-size:60px;
+}
+h3{
+  font-size:40px
+}
+
+.box {
+  max-width: 500px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  background-color: #f5b51b;
+  text-align: center;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+  padding:0;
+  margin: 0;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+/* input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #f5b51b;
+  display:none;
+} */
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 250;
+  color: #000000;
+}
+
+form.item {
+  text-align: center;
+  margin-left: 20px;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 353px;
+  display: inline-block;
+  margin:0 auto;
+  
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #f5b51b;
+}
+
+::placeholder {
+  color: #00204a;
+  opacity: 1;
+}
+
+footer {
+  color: #00204a;
+  text-align: center;
+}

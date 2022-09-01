@@ -1,0 +1,24 @@
+<%- include("header") -%>
+<div class="box" id="heading">
+    <h1> <%= dayShort %> </h1>
+    <h3> <%= dayLong %> </h3>
+</div>
+<div class="box">
+        <% listEntry.forEach(function(element){ %>
+            <form method="post" action="/<%= user%>/delete">
+                <div class="item">
+                    <input type="checkbox" name="delete" onChange="this.form.submit()" value="<%=element._id%>">
+                    <p> <%= element.name %> </p> 
+                </div> 
+                <input type="hidden" name="user" value="<%= user %>">
+            </form>
+        <%});%>   
+        
+        <form class="item" method="POST" action="/<%= user%>" <%onkeydown="if (event.keyCode == 13) { this.form.submit(); return false;}" %>>
+            <input name="entry" type="text" placeholder="Enter Item to be added to List" autocomplete="off" focus="on">
+        </form>
+        
+</div>
+<%- include("footer") -%>
+
+    
